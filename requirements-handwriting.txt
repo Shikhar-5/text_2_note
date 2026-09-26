@@ -1,0 +1,13 @@
+# Install CPU builds of torch and torchvision from the PyTorch CPU index first.
+Django>=6.1,<7
+django-cors-headers>=4.9,<5
+python-dotenv>=1.0,<2
+openai>=2,<4
+Pillow>=11,<13
+numpy>=2,<3
+opencv-python-headless>=4.10,<6
+scipy>=1.13,<2
+pandas>=2.2,<4
+matplotlib>=3.8,<4
+six>=1.16,<2
+huggingface-hub>=0.28,<2

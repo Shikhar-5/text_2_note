@@ -30,3 +30,8 @@ Thumbs.db
 # Python cache
 .pytest_cache/
 .mypy_cache/
+
+# Uploaded personal handwriting and downloaded HWT checkpoint
+Text2Note/handwriting_profiles/
+Text2Note/handwriting_engine/hwt_model/
+Text2Note/uploads/*
