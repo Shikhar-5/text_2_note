@@ -1,0 +1,582 @@
+[
+  {
+    "sample": "sample_04",
+    "line": 1,
+    "word": 1,
+    "x": 17,
+    "y": 40,
+    "width": 72,
+    "height": 55,
+    "filename": "line_001_word_001.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 1,
+    "word": 2,
+    "x": 199,
+    "y": 53,
+    "width": 71,
+    "height": 44,
+    "filename": "line_001_word_002.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 1,
+    "word": 3,
+    "x": 376,
+    "y": 71,
+    "width": 75,
+    "height": 40,
+    "filename": "line_001_word_003.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 1,
+    "word": 4,
+    "x": 533,
+    "y": 73,
+    "width": 69,
+    "height": 43,
+    "filename": "line_001_word_004.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 1,
+    "word": 5,
+    "x": 683,
+    "y": 77,
+    "width": 77,
+    "height": 42,
+    "filename": "line_001_word_005.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 1,
+    "word": 6,
+    "x": 826,
+    "y": 78,
+    "width": 77,
+    "height": 49,
+    "filename": "line_001_word_006.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 2,
+    "word": 1,
+    "x": 63,
+    "y": 124,
+    "width": 26,
+    "height": 23,
+    "filename": "line_002_word_001.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 2,
+    "word": 2,
+    "x": 992,
+    "y": 92,
+    "width": 83,
+    "height": 67,
+    "filename": "line_002_word_002.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 2,
+    "word": 3,
+    "x": 1154,
+    "y": 99,
+    "width": 76,
+    "height": 43,
+    "filename": "line_002_word_003.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 2,
+    "word": 4,
+    "x": 1307,
+    "y": 100,
+    "width": 77,
+    "height": 45,
+    "filename": "line_002_word_004.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 3,
+    "word": 1,
+    "x": 5,
+    "y": 123,
+    "width": 73,
+    "height": 61,
+    "filename": "line_003_word_001.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 3,
+    "word": 2,
+    "x": 196,
+    "y": 134,
+    "width": 84,
+    "height": 40,
+    "filename": "line_003_word_002.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 3,
+    "word": 3,
+    "x": 376,
+    "y": 137,
+    "width": 72,
+    "height": 52,
+    "filename": "line_003_word_003.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 3,
+    "word": 4,
+    "x": 533,
+    "y": 146,
+    "width": 367,
+    "height": 57,
+    "filename": "line_003_word_004.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 3,
+    "word": 5,
+    "x": 995,
+    "y": 166,
+    "width": 43,
+    "height": 37,
+    "filename": "line_003_word_005.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 3,
+    "word": 6,
+    "x": 1155,
+    "y": 168,
+    "width": 48,
+    "height": 39,
+    "filename": "line_003_word_006.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 4,
+    "word": 1,
+    "x": 1024,
+    "y": 179,
+    "width": 37,
+    "height": 41,
+    "filename": "line_004_word_001.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 4,
+    "word": 2,
+    "x": 1200,
+    "y": 182,
+    "width": 39,
+    "height": 45,
+    "filename": "line_004_word_002.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 4,
+    "word": 3,
+    "x": 1304,
+    "y": 172,
+    "width": 89,
+    "height": 47,
+    "filename": "line_004_word_003.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 5,
+    "word": 1,
+    "x": 9,
+    "y": 207,
+    "width": 85,
+    "height": 46,
+    "filename": "line_005_word_001.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 5,
+    "word": 2,
+    "x": 194,
+    "y": 210,
+    "width": 78,
+    "height": 46,
+    "filename": "line_005_word_002.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 5,
+    "word": 3,
+    "x": 374,
+    "y": 214,
+    "width": 69,
+    "height": 41,
+    "filename": "line_005_word_003.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 5,
+    "word": 4,
+    "x": 537,
+    "y": 217,
+    "width": 63,
+    "height": 51,
+    "filename": "line_005_word_004.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 5,
+    "word": 5,
+    "x": 678,
+    "y": 230,
+    "width": 224,
+    "height": 49,
+    "filename": "line_005_word_005.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 5,
+    "word": 6,
+    "x": 990,
+    "y": 238,
+    "width": 40,
+    "height": 43,
+    "filename": "line_005_word_006.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 6,
+    "word": 1,
+    "x": 1002,
+    "y": 255,
+    "width": 49,
+    "height": 47,
+    "filename": "line_006_word_001.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 6,
+    "word": 2,
+    "x": 1154,
+    "y": 253,
+    "width": 93,
+    "height": 37,
+    "filename": "line_006_word_002.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 7,
+    "word": 1,
+    "x": 29,
+    "y": 364,
+    "width": 56,
+    "height": 43,
+    "filename": "line_007_word_001.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 7,
+    "word": 2,
+    "x": 228,
+    "y": 374,
+    "width": 45,
+    "height": 41,
+    "filename": "line_007_word_002.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 7,
+    "word": 3,
+    "x": 386,
+    "y": 381,
+    "width": 52,
+    "height": 37,
+    "filename": "line_007_word_003.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 7,
+    "word": 4,
+    "x": 551,
+    "y": 389,
+    "width": 49,
+    "height": 39,
+    "filename": "line_007_word_004.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 7,
+    "word": 5,
+    "x": 690,
+    "y": 380,
+    "width": 40,
+    "height": 47,
+    "filename": "line_007_word_005.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 7,
+    "word": 6,
+    "x": 824,
+    "y": 390,
+    "width": 46,
+    "height": 34,
+    "filename": "line_007_word_006.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 7,
+    "word": 7,
+    "x": 968,
+    "y": 399,
+    "width": 39,
+    "height": 40,
+    "filename": "line_007_word_007.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 7,
+    "word": 8,
+    "x": 1090,
+    "y": 396,
+    "width": 251,
+    "height": 41,
+    "filename": "line_007_word_008.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 8,
+    "word": 1,
+    "x": 22,
+    "y": 519,
+    "width": 98,
+    "height": 43,
+    "filename": "line_008_word_001.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 8,
+    "word": 2,
+    "x": 210,
+    "y": 518,
+    "width": 148,
+    "height": 65,
+    "filename": "line_008_word_002.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 8,
+    "word": 3,
+    "x": 424,
+    "y": 522,
+    "width": 167,
+    "height": 56,
+    "filename": "line_008_word_003.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 8,
+    "word": 4,
+    "x": 638,
+    "y": 526,
+    "width": 100,
+    "height": 52,
+    "filename": "line_008_word_004.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 8,
+    "word": 5,
+    "x": 816,
+    "y": 529,
+    "width": 30,
+    "height": 25,
+    "filename": "line_008_word_005.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 8,
+    "word": 6,
+    "x": 860,
+    "y": 552,
+    "width": 42,
+    "height": 26,
+    "filename": "line_008_word_006.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 8,
+    "word": 7,
+    "x": 917,
+    "y": 547,
+    "width": 32,
+    "height": 30,
+    "filename": "line_008_word_007.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 8,
+    "word": 8,
+    "x": 1139,
+    "y": 533,
+    "width": 94,
+    "height": 43,
+    "filename": "line_008_word_008.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 8,
+    "word": 9,
+    "x": 1276,
+    "y": 526,
+    "width": 85,
+    "height": 45,
+    "filename": "line_008_word_009.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 9,
+    "word": 1,
+    "x": 800,
+    "y": 551,
+    "width": 68,
+    "height": 46,
+    "filename": "line_009_word_001.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 9,
+    "word": 2,
+    "x": 891,
+    "y": 548,
+    "width": 35,
+    "height": 45,
+    "filename": "line_009_word_002.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 9,
+    "word": 3,
+    "x": 1000,
+    "y": 551,
+    "width": 107,
+    "height": 33,
+    "filename": "line_009_word_003.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 9,
+    "word": 4,
+    "x": 1338,
+    "y": 548,
+    "width": 59,
+    "height": 47,
+    "filename": "line_009_word_004.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 10,
+    "word": 1,
+    "x": 32,
+    "y": 591,
+    "width": 96,
+    "height": 65,
+    "filename": "line_010_word_001.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 11,
+    "word": 1,
+    "x": 36,
+    "y": 745,
+    "width": 320,
+    "height": 56,
+    "filename": "line_011_word_001.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 12,
+    "word": 1,
+    "x": 128,
+    "y": 829,
+    "width": 31,
+    "height": 21,
+    "filename": "line_012_word_001.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 13,
+    "word": 1,
+    "x": 38,
+    "y": 838,
+    "width": 107,
+    "height": 38,
+    "filename": "line_013_word_001.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 13,
+    "word": 2,
+    "x": 149,
+    "y": 828,
+    "width": 191,
+    "height": 46,
+    "filename": "line_013_word_002.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 14,
+    "word": 1,
+    "x": 60,
+    "y": 901,
+    "width": 420,
+    "height": 50,
+    "filename": "line_014_word_001.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 15,
+    "word": 1,
+    "x": 66,
+    "y": 1045,
+    "width": 344,
+    "height": 52,
+    "filename": "line_015_word_001.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 16,
+    "word": 1,
+    "x": 131,
+    "y": 1071,
+    "width": 18,
+    "height": 37,
+    "filename": "line_016_word_001.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 17,
+    "word": 1,
+    "x": 71,
+    "y": 1118,
+    "width": 255,
+    "height": 70,
+    "filename": "line_017_word_001.png"
+  },
+  {
+    "sample": "sample_04",
+    "line": 18,
+    "word": 1,
+    "x": 73,
+    "y": 1191,
+    "width": 363,
+    "height": 65,
+    "filename": "line_018_word_001.png"
+  }
+]

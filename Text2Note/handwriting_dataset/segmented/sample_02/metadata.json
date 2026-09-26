@@ -1,0 +1,1092 @@
+[
+  {
+    "sample": "sample_02",
+    "line": 1,
+    "word": 1,
+    "x": 973,
+    "y": 0,
+    "width": 66,
+    "height": 16,
+    "filename": "line_001_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 1,
+    "word": 2,
+    "x": 1042,
+    "y": 0,
+    "width": 37,
+    "height": 17,
+    "filename": "line_001_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 1,
+    "word": 3,
+    "x": 1095,
+    "y": 0,
+    "width": 113,
+    "height": 33,
+    "filename": "line_001_word_003.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 1,
+    "word": 4,
+    "x": 1296,
+    "y": 0,
+    "width": 17,
+    "height": 34,
+    "filename": "line_001_word_004.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 2,
+    "word": 1,
+    "x": 947,
+    "y": 0,
+    "width": 239,
+    "height": 84,
+    "filename": "line_002_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 2,
+    "word": 2,
+    "x": 1289,
+    "y": 28,
+    "width": 20,
+    "height": 55,
+    "filename": "line_002_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 3,
+    "word": 1,
+    "x": 88,
+    "y": 63,
+    "width": 262,
+    "height": 17,
+    "filename": "line_003_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 4,
+    "word": 1,
+    "x": 382,
+    "y": 62,
+    "width": 749,
+    "height": 56,
+    "filename": "line_004_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 4,
+    "word": 2,
+    "x": 1254,
+    "y": 76,
+    "width": 42,
+    "height": 11,
+    "filename": "line_004_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 5,
+    "word": 1,
+    "x": 125,
+    "y": 90,
+    "width": 188,
+    "height": 55,
+    "filename": "line_005_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 5,
+    "word": 2,
+    "x": 401,
+    "y": 102,
+    "width": 39,
+    "height": 44,
+    "filename": "line_005_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 5,
+    "word": 3,
+    "x": 1121,
+    "y": 104,
+    "width": 251,
+    "height": 19,
+    "filename": "line_005_word_003.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 6,
+    "word": 1,
+    "x": 0,
+    "y": 0,
+    "width": 135,
+    "height": 259,
+    "filename": "line_006_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 6,
+    "word": 2,
+    "x": 266,
+    "y": 132,
+    "width": 15,
+    "height": 12,
+    "filename": "line_006_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 6,
+    "word": 3,
+    "x": 304,
+    "y": 131,
+    "width": 103,
+    "height": 15,
+    "filename": "line_006_word_003.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 6,
+    "word": 4,
+    "x": 422,
+    "y": 103,
+    "width": 229,
+    "height": 58,
+    "filename": "line_006_word_004.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 6,
+    "word": 5,
+    "x": 708,
+    "y": 117,
+    "width": 36,
+    "height": 52,
+    "filename": "line_006_word_005.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 6,
+    "word": 6,
+    "x": 834,
+    "y": 123,
+    "width": 46,
+    "height": 53,
+    "filename": "line_006_word_006.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 6,
+    "word": 7,
+    "x": 1255,
+    "y": 135,
+    "width": 25,
+    "height": 23,
+    "filename": "line_006_word_007.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 6,
+    "word": 8,
+    "x": 1334,
+    "y": 128,
+    "width": 26,
+    "height": 25,
+    "filename": "line_006_word_008.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 7,
+    "word": 1,
+    "x": 88,
+    "y": 142,
+    "width": 278,
+    "height": 65,
+    "filename": "line_007_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 7,
+    "word": 2,
+    "x": 395,
+    "y": 153,
+    "width": 49,
+    "height": 51,
+    "filename": "line_007_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 7,
+    "word": 3,
+    "x": 546,
+    "y": 169,
+    "width": 27,
+    "height": 47,
+    "filename": "line_007_word_003.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 7,
+    "word": 4,
+    "x": 652,
+    "y": 151,
+    "width": 47,
+    "height": 14,
+    "filename": "line_007_word_004.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 7,
+    "word": 5,
+    "x": 738,
+    "y": 136,
+    "width": 84,
+    "height": 37,
+    "filename": "line_007_word_005.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 7,
+    "word": 6,
+    "x": 968,
+    "y": 130,
+    "width": 90,
+    "height": 102,
+    "filename": "line_007_word_006.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 7,
+    "word": 7,
+    "x": 1098,
+    "y": 132,
+    "width": 295,
+    "height": 60,
+    "filename": "line_007_word_007.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 8,
+    "word": 1,
+    "x": 83,
+    "y": 191,
+    "width": 18,
+    "height": 12,
+    "filename": "line_008_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 8,
+    "word": 2,
+    "x": 133,
+    "y": 191,
+    "width": 17,
+    "height": 12,
+    "filename": "line_008_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 8,
+    "word": 3,
+    "x": 361,
+    "y": 169,
+    "width": 281,
+    "height": 53,
+    "filename": "line_008_word_003.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 8,
+    "word": 4,
+    "x": 696,
+    "y": 177,
+    "width": 45,
+    "height": 52,
+    "filename": "line_008_word_004.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 8,
+    "word": 5,
+    "x": 832,
+    "y": 126,
+    "width": 89,
+    "height": 166,
+    "filename": "line_008_word_005.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 8,
+    "word": 6,
+    "x": 956,
+    "y": 183,
+    "width": 47,
+    "height": 58,
+    "filename": "line_008_word_006.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 8,
+    "word": 7,
+    "x": 1293,
+    "y": 157,
+    "width": 96,
+    "height": 99,
+    "filename": "line_008_word_007.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 9,
+    "word": 1,
+    "x": 68,
+    "y": 201,
+    "width": 59,
+    "height": 51,
+    "filename": "line_009_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 9,
+    "word": 2,
+    "x": 250,
+    "y": 201,
+    "width": 43,
+    "height": 56,
+    "filename": "line_009_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 9,
+    "word": 3,
+    "x": 651,
+    "y": 198,
+    "width": 162,
+    "height": 35,
+    "filename": "line_009_word_003.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 9,
+    "word": 4,
+    "x": 916,
+    "y": 224,
+    "width": 37,
+    "height": 13,
+    "filename": "line_009_word_004.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 9,
+    "word": 5,
+    "x": 1094,
+    "y": 188,
+    "width": 180,
+    "height": 64,
+    "filename": "line_009_word_005.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 10,
+    "word": 1,
+    "x": 120,
+    "y": 215,
+    "width": 49,
+    "height": 37,
+    "filename": "line_010_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 10,
+    "word": 2,
+    "x": 289,
+    "y": 220,
+    "width": 37,
+    "height": 38,
+    "filename": "line_010_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 10,
+    "word": 3,
+    "x": 421,
+    "y": 212,
+    "width": 95,
+    "height": 54,
+    "filename": "line_010_word_003.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 10,
+    "word": 4,
+    "x": 997,
+    "y": 213,
+    "width": 91,
+    "height": 64,
+    "filename": "line_010_word_004.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 10,
+    "word": 5,
+    "x": 1180,
+    "y": 235,
+    "width": 165,
+    "height": 16,
+    "filename": "line_010_word_005.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 11,
+    "word": 1,
+    "x": 286,
+    "y": 252,
+    "width": 168,
+    "height": 18,
+    "filename": "line_011_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 11,
+    "word": 2,
+    "x": 458,
+    "y": 222,
+    "width": 203,
+    "height": 61,
+    "filename": "line_011_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 11,
+    "word": 3,
+    "x": 724,
+    "y": 227,
+    "width": 36,
+    "height": 63,
+    "filename": "line_011_word_003.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 12,
+    "word": 1,
+    "x": 11,
+    "y": 253,
+    "width": 18,
+    "height": 66,
+    "filename": "line_012_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 12,
+    "word": 2,
+    "x": 652,
+    "y": 256,
+    "width": 136,
+    "height": 83,
+    "filename": "line_012_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 12,
+    "word": 3,
+    "x": 804,
+    "y": 277,
+    "width": 18,
+    "height": 12,
+    "filename": "line_012_word_003.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 12,
+    "word": 4,
+    "x": 875,
+    "y": 264,
+    "width": 312,
+    "height": 65,
+    "filename": "line_012_word_004.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 13,
+    "word": 1,
+    "x": 1179,
+    "y": 294,
+    "width": 208,
+    "height": 18,
+    "filename": "line_013_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 14,
+    "word": 1,
+    "x": 201,
+    "y": 312,
+    "width": 512,
+    "height": 31,
+    "filename": "line_014_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 15,
+    "word": 1,
+    "x": 9,
+    "y": 313,
+    "width": 16,
+    "height": 68,
+    "filename": "line_015_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 15,
+    "word": 2,
+    "x": 80,
+    "y": 313,
+    "width": 39,
+    "height": 47,
+    "filename": "line_015_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 15,
+    "word": 3,
+    "x": 263,
+    "y": 316,
+    "width": 16,
+    "height": 46,
+    "filename": "line_015_word_003.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 15,
+    "word": 4,
+    "x": 407,
+    "y": 322,
+    "width": 44,
+    "height": 51,
+    "filename": "line_015_word_004.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 15,
+    "word": 5,
+    "x": 560,
+    "y": 333,
+    "width": 35,
+    "height": 46,
+    "filename": "line_015_word_005.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 15,
+    "word": 6,
+    "x": 705,
+    "y": 332,
+    "width": 312,
+    "height": 25,
+    "filename": "line_015_word_006.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 15,
+    "word": 7,
+    "x": 1021,
+    "y": 346,
+    "width": 132,
+    "height": 16,
+    "filename": "line_015_word_007.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 16,
+    "word": 1,
+    "x": 695,
+    "y": 336,
+    "width": 109,
+    "height": 56,
+    "filename": "line_016_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 16,
+    "word": 2,
+    "x": 879,
+    "y": 345,
+    "width": 34,
+    "height": 48,
+    "filename": "line_016_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 16,
+    "word": 3,
+    "x": 1149,
+    "y": 351,
+    "width": 236,
+    "height": 19,
+    "filename": "line_016_word_003.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 17,
+    "word": 1,
+    "x": 7,
+    "y": 374,
+    "width": 17,
+    "height": 69,
+    "filename": "line_017_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 17,
+    "word": 2,
+    "x": 156,
+    "y": 351,
+    "width": 912,
+    "height": 66,
+    "filename": "line_017_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 17,
+    "word": 3,
+    "x": 1093,
+    "y": 357,
+    "width": 28,
+    "height": 50,
+    "filename": "line_017_word_003.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 17,
+    "word": 4,
+    "x": 1191,
+    "y": 359,
+    "width": 28,
+    "height": 57,
+    "filename": "line_017_word_004.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 18,
+    "word": 1,
+    "x": 1061,
+    "y": 406,
+    "width": 324,
+    "height": 22,
+    "filename": "line_018_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 19,
+    "word": 1,
+    "x": 6,
+    "y": 437,
+    "width": 15,
+    "height": 68,
+    "filename": "line_019_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 19,
+    "word": 2,
+    "x": 44,
+    "y": 437,
+    "width": 115,
+    "height": 62,
+    "filename": "line_019_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 19,
+    "word": 3,
+    "x": 192,
+    "y": 436,
+    "width": 1192,
+    "height": 81,
+    "filename": "line_019_word_003.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 20,
+    "word": 1,
+    "x": 137,
+    "y": 459,
+    "width": 829,
+    "height": 106,
+    "filename": "line_020_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 20,
+    "word": 2,
+    "x": 1015,
+    "y": 486,
+    "width": 90,
+    "height": 42,
+    "filename": "line_020_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 20,
+    "word": 3,
+    "x": 1143,
+    "y": 479,
+    "width": 97,
+    "height": 53,
+    "filename": "line_020_word_003.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 21,
+    "word": 1,
+    "x": 3,
+    "y": 499,
+    "width": 16,
+    "height": 70,
+    "filename": "line_021_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 21,
+    "word": 2,
+    "x": 98,
+    "y": 511,
+    "width": 72,
+    "height": 57,
+    "filename": "line_021_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 21,
+    "word": 3,
+    "x": 947,
+    "y": 521,
+    "width": 437,
+    "height": 23,
+    "filename": "line_021_word_003.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 22,
+    "word": 1,
+    "x": 166,
+    "y": 534,
+    "width": 34,
+    "height": 28,
+    "filename": "line_022_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 22,
+    "word": 2,
+    "x": 329,
+    "y": 536,
+    "width": 109,
+    "height": 35,
+    "filename": "line_022_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 23,
+    "word": 1,
+    "x": 2,
+    "y": 563,
+    "width": 15,
+    "height": 70,
+    "filename": "line_023_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 23,
+    "word": 2,
+    "x": 169,
+    "y": 512,
+    "width": 1218,
+    "height": 116,
+    "filename": "line_023_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 24,
+    "word": 1,
+    "x": 216,
+    "y": 626,
+    "width": 1173,
+    "height": 33,
+    "filename": "line_024_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 25,
+    "word": 1,
+    "x": 1,
+    "y": 627,
+    "width": 15,
+    "height": 70,
+    "filename": "line_025_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 25,
+    "word": 2,
+    "x": 260,
+    "y": 690,
+    "width": 476,
+    "height": 19,
+    "filename": "line_025_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 26,
+    "word": 1,
+    "x": 84,
+    "y": 691,
+    "width": 124,
+    "height": 59,
+    "filename": "line_026_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 26,
+    "word": 2,
+    "x": 1152,
+    "y": 702,
+    "width": 238,
+    "height": 15,
+    "filename": "line_026_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 27,
+    "word": 1,
+    "x": 0,
+    "y": 691,
+    "width": 15,
+    "height": 70,
+    "filename": "line_027_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 27,
+    "word": 2,
+    "x": 128,
+    "y": 705,
+    "width": 246,
+    "height": 51,
+    "filename": "line_027_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 28,
+    "word": 1,
+    "x": 200,
+    "y": 768,
+    "width": 20,
+    "height": 21,
+    "filename": "line_028_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 29,
+    "word": 1,
+    "x": 1,
+    "y": 755,
+    "width": 14,
+    "height": 70,
+    "filename": "line_029_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 29,
+    "word": 2,
+    "x": 95,
+    "y": 768,
+    "width": 286,
+    "height": 47,
+    "filename": "line_029_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 30,
+    "word": 1,
+    "x": 1,
+    "y": 819,
+    "width": 14,
+    "height": 71,
+    "filename": "line_030_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 30,
+    "word": 2,
+    "x": 92,
+    "y": 832,
+    "width": 158,
+    "height": 51,
+    "filename": "line_030_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 30,
+    "word": 3,
+    "x": 256,
+    "y": 831,
+    "width": 196,
+    "height": 47,
+    "filename": "line_030_word_003.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 31,
+    "word": 1,
+    "x": 0,
+    "y": 884,
+    "width": 15,
+    "height": 71,
+    "filename": "line_031_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 31,
+    "word": 2,
+    "x": 235,
+    "y": 941,
+    "width": 28,
+    "height": 14,
+    "filename": "line_031_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 32,
+    "word": 1,
+    "x": 236,
+    "y": 949,
+    "width": 29,
+    "height": 19,
+    "filename": "line_032_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 33,
+    "word": 1,
+    "x": 0,
+    "y": 948,
+    "width": 13,
+    "height": 71,
+    "filename": "line_033_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 33,
+    "word": 2,
+    "x": 73,
+    "y": 949,
+    "width": 395,
+    "height": 71,
+    "filename": "line_033_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 33,
+    "word": 3,
+    "x": 1345,
+    "y": 998,
+    "width": 52,
+    "height": 13,
+    "filename": "line_033_word_003.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 34,
+    "word": 1,
+    "x": 155,
+    "y": 1014,
+    "width": 16,
+    "height": 34,
+    "filename": "line_034_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 35,
+    "word": 1,
+    "x": 0,
+    "y": 1013,
+    "width": 13,
+    "height": 71,
+    "filename": "line_035_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 35,
+    "word": 2,
+    "x": 86,
+    "y": 1030,
+    "width": 818,
+    "height": 54,
+    "filename": "line_035_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 35,
+    "word": 3,
+    "x": 1168,
+    "y": 1057,
+    "width": 230,
+    "height": 16,
+    "filename": "line_035_word_003.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 36,
+    "word": 1,
+    "x": 128,
+    "y": 1036,
+    "width": 139,
+    "height": 91,
+    "filename": "line_036_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 37,
+    "word": 1,
+    "x": 0,
+    "y": 1077,
+    "width": 22,
+    "height": 72,
+    "filename": "line_037_word_001.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 37,
+    "word": 2,
+    "x": 163,
+    "y": 1077,
+    "width": 20,
+    "height": 50,
+    "filename": "line_037_word_002.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 37,
+    "word": 3,
+    "x": 280,
+    "y": 1098,
+    "width": 1118,
+    "height": 56,
+    "filename": "line_037_word_003.png"
+  },
+  {
+    "sample": "sample_02",
+    "line": 38,
+    "word": 1,
+    "x": 0,
+    "y": 1101,
+    "width": 1397,
+    "height": 113,
+    "filename": "line_038_word_001.png"
+  }
+]

@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- vroooo http://127.0.0.1:5500/Text2Note/frontend/index.html try kroo hogyaaaa -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Text2Note — Turn Text Into Handwritten Notes</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Kalam:wght@300;400;700&family=Patrick+Hand&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <a href="#home" class="logo">
+            <span class="logo-mark">T</span>
+
+            <span class="logo-text">
+                Text<span>2</span>Note
+            </span>
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="#home">Home</a>
+
+            <a href="#how-it-works">
+                How it works
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+        </nav>
+
+        <a href="#workspace" class="nav-cta">
+            Create a note →
+        </a>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                <span class="eyebrow-dot"></span>
+                Your text, your notebook
+            </div>
+
+            <h1>
+                Turn typed words into
+                <span>handwritten notes.</span>
+            </h1>
+
+            <p>
+                Upload a photo of your notebook, add your text,
+                choose your handwriting style and make it feel
+                naturally written.
+            </p>
+
+            <div class="hero-actions">
+
+                <a href="#workspace" class="primary-button">
+                    Start creating
+                    <span>→</span>
+                </a>
+
+                <a href="#how-it-works" class="secondary-button">
+                    See how it works
+                </a>
+
+            </div>
+
+            <div class="hero-note">
+                No complicated setup · Just upload and create
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="sticky-note-section">
+
+        <div class="sticky-note">
+
+            <span class="pin"></span>
+
+            <p>
+                Built during a hackathon because copying notes by hand
+                at 2 AM before submissions wasn't fun.
+            </p>
+
+        </div>
+
+    </section>
+    <!-- ================= WORKSPACE ================= -->
+    <div class="workspace-intro">
+
+        <div class="workspace-label">
+            Notebook Workspace
+        </div>
+
+        <p>
+            Upload a notebook page, adjust the handwriting,
+            and see everything update live.
+        </p>
+
+    </div>
+    <main class="workspace" id="workspace">
+
+
+        <!-- ================= LEFT PANEL ================= -->
+
+        <section class="panel upload-panel">
+
+            <div class="panel-header">
+
+                <div class="step-label">
+                    <span>01</span>
+                    NOTEBOOK
+                </div>
+
+                <div class="panel-status">
+                    <span class="status-dot"></span>
+                    Ready
+                </div>
+
+            </div>
+
+            <h2>
+                Add your notebook page
+            </h2>
+
+            <p class="panel-description">
+                Choose a clear photo with visible writing lines
+                for the best result.
+            </p>
+
+
+            <!-- Upload area -->
+
+            <div class="upload-box" id="uploadBox">
+
+                <div class="upload-illustration">
+
+                    <div class="paper-back"></div>
+
+                    <div class="paper-front">
+                        <span>✎</span>
+                    </div>
+
+                </div>
+
+                <h3>
+                    Drop your notebook here
+                </h3>
+
+                <p>
+                    or choose an image from your device
+                </p>
+
+                <button
+                    type="button"
+                    class="browse-button"
+                    id="browseButton"
+                >
+                    Browse image
+                </button>
+
+                <span class="upload-hint">
+                    JPG · JPEG · PNG
+                </span>
+
+            </div>
+
+
+            <!-- Image preview -->
+
+            <div
+                class="uploaded-preview"
+                id="imagePreview"
+                hidden
+            >
+
+                <div class="preview-image-wrapper">
+
+                    <img
+                        id="previewImage"
+                        src=""
+                        alt="Uploaded notebook"
+                    >
+
+                    <div class="image-badge">
+                        ✓ Uploaded
+                    </div>
+
+                </div>
+
+                <div class="image-actions">
+
+                    <button
+                        type="button"
+                        id="replaceButton"
+                    >
+                        Replace
+                    </button>
+
+                    <button
+                        type="button"
+                        id="removeButton"
+                        class="danger-button"
+                    >
+                        Remove
+                    </button>
+
+                </div>
+
+            </div>
+
+            <input
+                type="file"
+                id="imageInput"
+                accept=".jpg,.jpeg,.png"
+                hidden
+            >
+
+        </section>
+
+
+        <!-- ================= RIGHT PANEL ================= -->
+
+        <section class="panel settings-panel">
+
+            <div class="panel-header">
+
+                <div class="step-label">
+                    <span>02</span>
+                    CUSTOMIZE
+                </div>
+
+                <div class="live-indicator">
+                    Live preview
+                </div>
+
+            </div>
+
+            <h2>
+                Make it look handwritten
+            </h2>
+
+            <p class="panel-description">
+                Adjust the style until it feels like your own note.
+            </p>
+
+
+            <!-- Text -->
+
+            <div class="control">
+
+                <div class="control-title">
+
+                    <label for="textInput">
+                        What should it say?
+                    </label>
+
+                    <span class="required">
+                        Required
+                    </span>
+
+                </div>
+
+                <div class="textarea-wrapper">
+
+                    <textarea
+                        id="textInput"
+                        maxlength="1000"
+                        placeholder="Write something like:
+Remember to submit the assignment tomorrow..."
+                    ></textarea>
+
+                    <span
+                        class="textarea-icon"
+                    >
+                        ✎
+                    </span>
+
+                </div>
+
+                <div class="text-meta">
+
+                    <span id="wordCount">
+                        0 words
+                    </span>
+
+                    <span id="characterCount">
+                        0 / 1000
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Font -->
+
+            <div class="control">
+
+                <div class="control-title">
+
+                    <label for="fontSelect">
+                        Handwriting style
+                    </label>
+
+                    <button
+                        type="button"
+                        class="small-link"
+                        id="addFontButton"
+                    >
+                        + Add font
+                    </button>
+
+                    <input
+                        type="file"
+                        id="fontInput"
+                        accept=".ttf,.otf"
+                        hidden
+                    >
+
+                </div>
+
+                <!-- AI HANDWRITING MATCH -->
+
+<div class="handwriting-match">
+
+    <div class="handwriting-match-header">
+        <div>
+            <strong>Match my handwriting</strong>
+            <small>Upload a sample of your actual handwriting</small>
+        </div>
+    </div>
+
+    <input
+        type="file"
+        id="handwritingInput"
+        accept=".jpg,.jpeg,.png,.webp"
+        hidden
+    >
+
+    <button
+        type="button"
+        class="handwriting-upload-button"
+        id="handwritingUploadButton"
+    >
+        ✍ Upload handwriting sample
+    </button>
+
+    <div
+        class="handwriting-status"
+        id="handwritingStatus"
+    >
+        AI will find the closest matching font
+    </div>
+
+</div>
+
+                <div class="font-select-wrapper">
+
+                    <select id="fontSelect">
+                        
+
+                        <option value="Caveat">
+                            Caveat — Casual
+                        </option>
+
+                        <option value="Kalam">
+                            Kalam — Natural
+                        </option>
+
+                        <option value="Patrick Hand">
+                            Patrick Hand — Friendly
+                        </option>
+
+                        <option value="Dancing Script">
+                            Dancing Script — Elegant
+                        </option>
+
+                    </select>
+
+
+                    <span>⌄</span>
+
+                </div>
+                <div class="font-samples">
+
+                            <div class="font-sample caveat">
+                                This is how Caveat looks
+                            </div>
+
+                            <div class="font-sample kalam">
+                                This is how Kalam looks
+                            </div>
+
+                            <div class="font-sample patrick">
+                                This is how Patrick Hand looks
+                            </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Size + Color -->
+
+            <div class="control-row">
+
+                <div class="control">
+
+                    <div class="control-title">
+
+                        <label for="fontSize">
+                            Size
+                        </label>
+
+                        <output id="fontSizeValue">
+                            24px
+                        </output>
+
+                    </div>
+
+                    <input
+                        type="range"
+                        id="fontSize"
+                        min="12"
+                        max="60"
+                        value="24"
+                    >
+
+                    <div class="range-labels">
+                        <span>Small</span>
+                        <span>Large</span>
+                    </div>
+
+                </div>
+
+
+                <div class="control">
+
+                    <div class="control-title">
+
+                        <label>
+                            Ink color
+                        </label>
+
+                        <output id="colorValue">
+                            #202020
+                        </output>
+
+                    </div>
+
+                    <div class="color-picker">
+
+                        <input
+                            type="color"
+                            id="fontColor"
+                            value="#202020"
+                        >
+
+                        <span>
+                            Choose ink
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Placement -->
+
+            <div class="control">
+
+                <div class="control-title">
+
+                    <label>
+                        Placement
+                    </label>
+
+                    <span class="help-icon" title="Choose how the text is positioned">
+                        ?
+                    </span>
+
+                </div>
+
+
+                <div class="placement-options">
+
+                    <button
+                        type="button"
+                        class="placement-option active"
+                        data-mode="automatic"
+                    >
+
+                        <span class="option-icon">✦</span>
+
+                        <span class="option-content">
+
+                            <strong>
+                                Automatic
+                            </strong>
+
+                            <small>
+                                Best for notebook lines
+                            </small>
+
+                        </span>
+
+                        <span class="check">
+                            ✓
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="placement-option"
+                        data-mode="manual"
+                    >
+
+                        <span class="option-icon">↗</span>
+
+                        <span class="option-content">
+
+                            <strong>
+                                Manual
+                            </strong>
+
+                            <small>
+                                Position it yourself
+                            </small>
+
+                        </span>
+
+                        <span class="check">
+                            ✓
+                        </span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Advanced controls -->
+
+            <div class="advanced-controls">
+
+                <div class="advanced-title">
+                    Fine tune
+                </div>
+
+                <div class="fine-tune-grid">
+
+                    <div>
+                        <label for="lineSpacing">
+                            Line spacing
+                        </label>
+
+                        <input
+                            type="range"
+                            id="lineSpacing"
+                            min="0.8"
+                            max="2"
+                            step="0.1"
+                            value="1.2"
+                        >
+                    </div>
+
+                    <div>
+                        <label for="rotation">
+                            Rotation
+                        </label>
+
+                        <input
+                            type="range"
+                            id="rotation"
+                            min="-10"
+                            max="10"
+                            value="0"
+                        >
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Generate -->
+
+            <button
+                type="button"
+                class="generate-button"
+                id="generateButton"
+            >
+
+                <span class="generate-icon">
+                    ✦
+                </span>
+
+                <span class="generate-text">
+                    Generate my note
+                </span>
+
+                <span class="generate-arrow">
+                    →
+                </span>
+
+            </button>
+
+            <p class="generate-hint">
+                You can change everything before downloading.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= PREVIEW ================= -->
+
+    <section class="result-section">
+
+        <div class="result-header">
+
+            <div>
+
+                <div class="step-label">
+                    <span>03</span>
+                    PREVIEW
+                </div>
+
+                <h2>
+                    Your notebook
+                </h2>
+
+            </div>
+
+            <div class="result-actions">
+
+                <button type="button">
+                    ↶ Undo
+                </button>
+
+                <button type="button">
+                    ↷ Redo
+                </button>
+
+                <button
+    type="button"
+    class="download-button"
+    id="downloadButton"
+>
+    ↓ PNG
+</button>
+
+<button
+    type="button"
+    class="download-button"
+    id="downloadPdfButton"
+>
+    ↓ PDF
+</button>
+
+            </div>
+
+        </div>
+                <div class="preview-toolbar">
+                    
+            <button type="button">
+                ✎ Align to lines
+            </button>
+
+            <button type="button">
+                ↺ Reset position
+            </button>
+
+            <button type="button">
+                ⌗ Center
+            </button>
+            <button id="openPreviewBtn">
+                    Open Full Preview ↗
+            </button>
+            <button id="zoomInBtn">＋</button>
+            <button id="zoomOutBtn">－</button>
+        </div>
+
+        <div
+            class="notebook-canvas"
+            id="notebookPreview"
+        >
+
+            <div class="canvas-empty" id="canvasEmpty">
+
+                <div class="canvas-paper-icon">
+                    ✎
+                </div>
+
+                <h3>
+                    Your note will appear here
+                </h3>
+
+                <p>
+                    Upload a notebook page and start writing.
+                </p>
+
+            </div>
+
+            <div
+                class="editor-container"
+                id="editorContainer"
+                hidden
+            >
+                <img
+                    id="editorImage"
+                    class="editor-image"
+                    src=""
+                    alt="Notebook editor preview"
+                >
+
+                <canvas
+                    id="lineEditorCanvas"
+                    class="line-editor-canvas"
+                ></canvas>
+
+                <div
+                    class="editor-status"
+                    id="editorStatus"
+                >
+                    AI lines: waiting for notebook analysis
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= HOW IT WORKS ================= -->
+
+    <section
+        class="info-section"
+        id="how-it-works"
+    >
+
+        <div class="info-heading">
+
+            <div class="step-label">
+                HOW IT WORKS
+            </div>
+
+            <h2>
+                From typed text to a handwritten page.
+            </h2>
+
+            <p>
+                Four simple steps. No complicated tools.
+            </p>
+
+        </div>
+
+
+        <div class="steps-grid">
+
+            <article class="info-card">
+
+                <span class="info-number">01</span>
+
+                <h3>
+                    Upload
+                </h3>
+
+                <p>
+                    Take a photo of your notebook page
+                    and upload it.
+                </p>
+
+            </article>
+
+
+            <article class="info-card">
+
+                <span class="info-number">02</span>
+
+                <h3>
+                    Write
+                </h3>
+
+                <p>
+                    Type or paste the content you want
+                    to appear on the page.
+                </p>
+
+            </article>
+
+
+            <article class="info-card">
+
+                <span class="info-number">03</span>
+
+                <h3>
+                    Customize
+                </h3>
+
+                <p>
+                    Choose your handwriting style,
+                    size and ink color.
+                </p>
+
+            </article>
+
+
+            <article class="info-card">
+
+                <span class="info-number">04</span>
+
+                <h3>
+                    Create
+                </h3>
+
+                <p>
+                    Preview your note and download
+                    your finished page.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+    <section class="examples-section">
+
+        <div class="info-heading">
+
+            <div class="step-label">
+                EXAMPLES
+            </div>
+
+            <h2>
+                What people might use it for
+            </h2>
+
+        </div>
+
+        <div class="example-grid">
+
+            <div class="example-card">
+                <span>📚</span>
+                <h3>Class Notes</h3>
+                <p>Turn lecture notes into notebook pages.</p>
+            </div>
+
+            <div class="example-card">
+                <span>📝</span>
+                <h3>Assignments</h3>
+                <p>Draft handwritten submissions quickly.</p>
+            </div>
+
+            <div class="example-card">
+                <span>💡</span>
+                <h3>Ideas</h3>
+                <p>Keep thoughts organized naturally.</p>
+            </div>
+
+        </div>
+
+    </section>
+    <section
+        class="about-section"
+        id="about"
+    >
+
+        <div class="about-content">
+
+            <div class="step-label">
+                ABOUT TEXT2NOTE
+            </div>
+
+            <h2>
+                A notebook tool built by students,
+                for students.
+            </h2>
+
+            <p>
+                Text2Note started as a hackathon idea:
+                what if typed text could be placed onto
+                notebook pages without rewriting everything
+                by hand?
+            </p>
+
+            <p>
+                The goal is simple—upload, customize,
+                preview and export a note that feels like
+                it belongs on the page.
+            </p>
+        </div>
+
+        <div class="about-mark">
+            T<span>2</span>N
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            Text2Note
+        </div>
+
+        <p>
+            Built during a hackathon.
+            Powered by deadlines, notebooks and caffeine.
+        </p>
+        <span>
+            © 2026 Text2Note
+        </span>
+
+    </footer>
+
+
+    <script src="js/app.js"></script>
+    <div class="corner-doodle">
+        ✎ + ☕ + 😴 = Text2Note
+    </div>
+</body>
+</html>
+<!-- vrooooo where? -->

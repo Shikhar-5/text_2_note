@@ -1,0 +1,515 @@
+{
+  "source": "D:\\Hackathon_project\\Text2Note\\handwriting_samples\\sample_04.jpg",
+  "alphabet": {
+    "A": {
+      "pair": [
+        "A",
+        "a"
+      ],
+      "row": 1,
+      "cell": 0,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\uppercase\\A.png"
+    },
+    "a": {
+      "pair": [
+        "A",
+        "a"
+      ],
+      "row": 1,
+      "cell": 0,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\lowercase\\a.png"
+    },
+    "B": {
+      "pair": [
+        "B",
+        "b"
+      ],
+      "row": 1,
+      "cell": 1,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\uppercase\\B.png"
+    },
+    "b": {
+      "pair": [
+        "B",
+        "b"
+      ],
+      "row": 1,
+      "cell": 1,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\lowercase\\b.png"
+    },
+    "C": {
+      "pair": [
+        "C",
+        "c"
+      ],
+      "row": 1,
+      "cell": 2,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\uppercase\\C.png"
+    },
+    "c": {
+      "pair": [
+        "C",
+        "c"
+      ],
+      "row": 1,
+      "cell": 2,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\lowercase\\c.png"
+    },
+    "D": {
+      "pair": [
+        "D",
+        "d"
+      ],
+      "row": 1,
+      "cell": 3,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\uppercase\\D.png"
+    },
+    "d": {
+      "pair": [
+        "D",
+        "d"
+      ],
+      "row": 1,
+      "cell": 3,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\lowercase\\d.png"
+    },
+    "E": {
+      "pair": [
+        "E",
+        "e"
+      ],
+      "row": 1,
+      "cell": 4,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\uppercase\\E.png"
+    },
+    "e": {
+      "pair": [
+        "E",
+        "e"
+      ],
+      "row": 1,
+      "cell": 4,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\lowercase\\e.png"
+    },
+    "F": {
+      "pair": [
+        "F",
+        "f"
+      ],
+      "row": 1,
+      "cell": 5,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\uppercase\\F.png"
+    },
+    "f": {
+      "pair": [
+        "F",
+        "f"
+      ],
+      "row": 1,
+      "cell": 5,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\lowercase\\f.png"
+    },
+    "G": {
+      "pair": [
+        "G",
+        "g"
+      ],
+      "row": 1,
+      "cell": 6,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\uppercase\\G.png"
+    },
+    "g": {
+      "pair": [
+        "G",
+        "g"
+      ],
+      "row": 1,
+      "cell": 6,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\lowercase\\g.png"
+    },
+    "H": {
+      "pair": [
+        "H",
+        "h"
+      ],
+      "row": 1,
+      "cell": 7,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\uppercase\\H.png"
+    },
+    "h": {
+      "pair": [
+        "H",
+        "h"
+      ],
+      "row": 1,
+      "cell": 7,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\lowercase\\h.png"
+    },
+    "I": {
+      "pair": [
+        "I",
+        "i"
+      ],
+      "row": 1,
+      "cell": 8,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\uppercase\\I.png"
+    },
+    "i": {
+      "pair": [
+        "I",
+        "i"
+      ],
+      "row": 1,
+      "cell": 8,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\lowercase\\i.png"
+    },
+    "J": {
+      "pair": [
+        "J",
+        "j"
+      ],
+      "row": 2,
+      "cell": 0,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\uppercase\\J.png"
+    },
+    "j": {
+      "pair": [
+        "J",
+        "j"
+      ],
+      "row": 2,
+      "cell": 0,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\lowercase\\j.png"
+    },
+    "K": {
+      "pair": [
+        "K",
+        "k"
+      ],
+      "row": 2,
+      "cell": 1,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\uppercase\\K.png"
+    },
+    "k": {
+      "pair": [
+        "K",
+        "k"
+      ],
+      "row": 2,
+      "cell": 1,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\lowercase\\k.png"
+    },
+    "L": {
+      "pair": [
+        "L",
+        "l"
+      ],
+      "row": 2,
+      "cell": 2,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\uppercase\\L.png"
+    },
+    "l": {
+      "pair": [
+        "L",
+        "l"
+      ],
+      "row": 2,
+      "cell": 2,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\lowercase\\l.png"
+    },
+    "M": {
+      "pair": [
+        "M",
+        "m"
+      ],
+      "row": 2,
+      "cell": 3,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\uppercase\\M.png"
+    },
+    "m": {
+      "pair": [
+        "M",
+        "m"
+      ],
+      "row": 2,
+      "cell": 3,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\lowercase\\m.png"
+    },
+    "N": {
+      "pair": [
+        "N",
+        "n"
+      ],
+      "row": 2,
+      "cell": 4,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\uppercase\\N.png"
+    },
+    "n": {
+      "pair": [
+        "N",
+        "n"
+      ],
+      "row": 2,
+      "cell": 4,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\lowercase\\n.png"
+    },
+    "O": {
+      "pair": [
+        "O",
+        "o"
+      ],
+      "row": 2,
+      "cell": 5,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\uppercase\\O.png"
+    },
+    "o": {
+      "pair": [
+        "O",
+        "o"
+      ],
+      "row": 2,
+      "cell": 5,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\lowercase\\o.png"
+    },
+    "P": {
+      "pair": [
+        "P",
+        "p"
+      ],
+      "row": 2,
+      "cell": 6,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\uppercase\\P.png"
+    },
+    "p": {
+      "pair": [
+        "P",
+        "p"
+      ],
+      "row": 2,
+      "cell": 6,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\lowercase\\p.png"
+    },
+    "Q": {
+      "pair": [
+        "Q",
+        "q"
+      ],
+      "row": 2,
+      "cell": 7,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\uppercase\\Q.png"
+    },
+    "q": {
+      "pair": [
+        "Q",
+        "q"
+      ],
+      "row": 2,
+      "cell": 7,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\lowercase\\q.png"
+    },
+    "R": {
+      "pair": [
+        "R",
+        "r"
+      ],
+      "row": 2,
+      "cell": 8,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\uppercase\\R.png"
+    },
+    "r": {
+      "pair": [
+        "R",
+        "r"
+      ],
+      "row": 2,
+      "cell": 8,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\lowercase\\r.png"
+    },
+    "S": {
+      "pair": [
+        "S",
+        "s"
+      ],
+      "row": 3,
+      "cell": 0,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\uppercase\\S.png"
+    },
+    "s": {
+      "pair": [
+        "S",
+        "s"
+      ],
+      "row": 3,
+      "cell": 0,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\lowercase\\s.png"
+    },
+    "T": {
+      "pair": [
+        "T",
+        "t"
+      ],
+      "row": 3,
+      "cell": 1,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\uppercase\\T.png"
+    },
+    "t": {
+      "pair": [
+        "T",
+        "t"
+      ],
+      "row": 3,
+      "cell": 1,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\lowercase\\t.png"
+    },
+    "U": {
+      "pair": [
+        "U",
+        "u"
+      ],
+      "row": 3,
+      "cell": 2,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\uppercase\\U.png"
+    },
+    "u": {
+      "pair": [
+        "U",
+        "u"
+      ],
+      "row": 3,
+      "cell": 2,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\lowercase\\u.png"
+    },
+    "V": {
+      "pair": [
+        "V",
+        "v"
+      ],
+      "row": 3,
+      "cell": 3,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\uppercase\\V.png"
+    },
+    "v": {
+      "pair": [
+        "V",
+        "v"
+      ],
+      "row": 3,
+      "cell": 3,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\lowercase\\v.png"
+    },
+    "W": {
+      "pair": [
+        "W",
+        "w"
+      ],
+      "row": 3,
+      "cell": 4,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\uppercase\\W.png"
+    },
+    "w": {
+      "pair": [
+        "W",
+        "w"
+      ],
+      "row": 3,
+      "cell": 4,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\lowercase\\w.png"
+    },
+    "X": {
+      "pair": [
+        "X",
+        "x"
+      ],
+      "row": 3,
+      "cell": 5,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\uppercase\\X.png"
+    },
+    "x": {
+      "pair": [
+        "X",
+        "x"
+      ],
+      "row": 3,
+      "cell": 5,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\lowercase\\x.png"
+    },
+    "Y": {
+      "pair": [
+        "Y",
+        "y"
+      ],
+      "row": 3,
+      "cell": 6,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\uppercase\\Y.png"
+    },
+    "y": {
+      "pair": [
+        "Y",
+        "y"
+      ],
+      "row": 3,
+      "cell": 6,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\lowercase\\y.png"
+    },
+    "Z": {
+      "pair": [
+        "Z",
+        "z"
+      ],
+      "row": 3,
+      "cell": 7,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\uppercase\\Z.png"
+    },
+    "z": {
+      "pair": [
+        "Z",
+        "z"
+      ],
+      "row": 3,
+      "cell": 7,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\lowercase\\z.png"
+    }
+  },
+  "digits": {
+    "0": {
+      "cell": 0,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\digits\\0.png"
+    },
+    "1": {
+      "cell": 1,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\digits\\1.png"
+    },
+    "2": {
+      "cell": 2,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\digits\\2.png"
+    },
+    "3": {
+      "cell": 3,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\digits\\3.png"
+    },
+    "4": {
+      "cell": 4,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\digits\\4.png"
+    },
+    "5": {
+      "cell": 5,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\digits\\5.png"
+    },
+    "6": {
+      "cell": 6,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\digits\\6.png"
+    },
+    "7": {
+      "cell": 7,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\digits\\7.png"
+    },
+    "8": {
+      "cell": 8,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\digits\\8.png"
+    },
+    "9": {
+      "cell": 9,
+      "source": "D:\\Hackathon_project\\Text2Note\\handwriting_dataset\\personal_library\\digits\\9.png"
+    }
+  }
+}

@@ -1,0 +1,647 @@
+{
+ "sample": "sample_02",
+ "image_size": [
+  1398,
+  1214
+ ],
+ "roi": {
+  "top": 0,
+  "bot": 1213,
+  "header_bottom": null
+ },
+ "rows": [
+  {
+   "row": 0,
+   "expected": [
+    "Aa",
+    "Bb",
+    "Cc",
+    "Dd",
+    "Ee",
+    "Ff",
+    "Gg",
+    "Hh",
+    "Ii",
+    "Jj"
+   ],
+   "bbox": [
+    952,
+    0,
+    1308,
+    35
+   ],
+   "split_confidence": 0.0,
+   "units": [
+    {
+     "text": "Aa",
+     "bbox": [
+      952,
+      0,
+      1011,
+      35
+     ]
+    },
+    {
+     "text": "Bb",
+     "bbox": [
+      1004,
+      0,
+      1034,
+      11
+     ]
+    },
+    {
+     "text": "Cc",
+     "bbox": [
+      1047,
+      0,
+      1074,
+      12
+     ]
+    },
+    {
+     "text": "Dd",
+     "bbox": [
+      1100,
+      0,
+      1105,
+      28
+     ]
+    },
+    {
+     "text": "Ee",
+     "bbox": [
+      1116,
+      0,
+      1139,
+      17
+     ]
+    },
+    {
+     "text": "Ff",
+     "bbox": [
+      1140,
+      2,
+      1162,
+      21
+     ]
+    },
+    {
+     "text": "Gg",
+     "bbox": [
+      1171,
+      0,
+      1198,
+      17
+     ]
+    },
+    {
+     "text": "Hh",
+     "bbox": null
+    },
+    {
+     "text": "Ii",
+     "bbox": null
+    },
+    {
+     "text": "Jj",
+     "bbox": [
+      1301,
+      0,
+      1308,
+      29
+     ]
+    }
+   ]
+  },
+  {
+   "row": 1,
+   "expected": [
+    "Kk",
+    "Ll",
+    "Mm",
+    "Nn",
+    "Oo",
+    "Pp",
+    "Qq",
+    "Rr",
+    "Ss",
+    "Tt"
+   ],
+   "bbox": [
+    0,
+    35,
+    1388,
+    311
+   ],
+   "split_confidence": 0.2222222222222222,
+   "units": [
+    {
+     "text": "Kk",
+     "bbox": [
+      73,
+      147,
+      164,
+      247
+     ]
+    },
+    {
+     "text": "Ll",
+     "bbox": [
+      130,
+      95,
+      279,
+      202
+     ]
+    },
+    {
+     "text": "Mm",
+     "bbox": [
+      255,
+      102,
+      361,
+      252
+     ]
+    },
+    {
+     "text": "Nn",
+     "bbox": [
+      400,
+      158,
+      511,
+      261
+     ]
+    },
+    {
+     "text": "Oo",
+     "bbox": [
+      556,
+      108,
+      656,
+      278
+     ]
+    },
+    {
+     "text": "Pp",
+     "bbox": [
+      387,
+      67,
+      1126,
+      311
+     ]
+    },
+    {
+     "text": "Qq",
+     "bbox": [
+      837,
+      128,
+      998,
+      311
+     ]
+    },
+    {
+     "text": "Rr",
+     "bbox": [
+      952,
+      35,
+      1164,
+      272
+     ]
+    },
+    {
+     "text": "Ss",
+     "bbox": [
+      1145,
+      143,
+      1269,
+      239
+     ]
+    },
+    {
+     "text": "Tt",
+     "bbox": [
+      1184,
+      146,
+      1384,
+      307
+     ]
+    }
+   ]
+  },
+  {
+   "row": 2,
+   "expected": [
+    "Uu",
+    "Vv",
+    "Ww",
+    "Xx",
+    "Yy",
+    "Zz"
+   ],
+   "bbox": [
+    13,
+    311,
+    1380,
+    431
+   ],
+   "split_confidence": 0.6,
+   "units": [
+    {
+     "text": "Uu",
+     "bbox": [
+      13,
+      318,
+      114,
+      431
+     ]
+    },
+    {
+     "text": "Vv",
+     "bbox": [
+      206,
+      317,
+      414,
+      357
+     ]
+    },
+    {
+     "text": "Ww",
+     "bbox": [
+      161,
+      325,
+      905,
+      406
+     ]
+    },
+    {
+     "text": "Xx",
+     "bbox": [
+      700,
+      311,
+      908,
+      388
+     ]
+    },
+    {
+     "text": "Yy",
+     "bbox": [
+      1004,
+      356,
+      1116,
+      402
+     ]
+    },
+    {
+     "text": "Zz",
+     "bbox": [
+      1196,
+      361,
+      1380,
+      423
+     ]
+    }
+   ]
+  },
+  {
+   "row": 3,
+   "expected": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+   ],
+   "bbox": [
+    8,
+    431,
+    1382,
+    623
+   ],
+   "split_confidence": 0.2222222222222222,
+   "units": [
+    {
+     "text": "0",
+     "bbox": [
+      49,
+      442,
+      165,
+      563
+     ]
+    },
+    {
+     "text": "1",
+     "bbox": [
+      142,
+      464,
+      336,
+      545
+     ]
+    },
+    {
+     "text": "2",
+     "bbox": [
+      276,
+      456,
+      402,
+      566
+     ]
+    },
+    {
+     "text": "3",
+     "bbox": [
+      468,
+      456,
+      546,
+      508
+     ]
+    },
+    {
+     "text": "4",
+     "bbox": [
+      197,
+      441,
+      1040,
+      549
+     ]
+    },
+    {
+     "text": "5",
+     "bbox": [
+      174,
+      517,
+      1382,
+      623
+     ]
+    },
+    {
+     "text": "6",
+     "bbox": [
+      845,
+      477,
+      949,
+      560
+     ]
+    },
+    {
+     "text": "7",
+     "bbox": [
+      1020,
+      491,
+      1100,
+      523
+     ]
+    },
+    {
+     "text": "8",
+     "bbox": [
+      1080,
+      484,
+      1235,
+      533
+     ]
+    },
+    {
+     "text": "9",
+     "bbox": [
+      1231,
+      476,
+      1379,
+      539
+     ]
+    }
+   ]
+  },
+  {
+   "row": 4,
+   "expected": [
+    "The",
+    "quick",
+    "brown",
+    "fox",
+    "jumps",
+    "over",
+    "the"
+   ],
+   "bbox": [
+    7,
+    623,
+    1384,
+    673
+   ],
+   "split_confidence": 0.0,
+   "units": [
+    {
+     "text": "The",
+     "bbox": null
+    },
+    {
+     "text": "quick",
+     "bbox": null
+    },
+    {
+     "text": "brown",
+     "bbox": null
+    },
+    {
+     "text": "fox",
+     "bbox": null
+    },
+    {
+     "text": "jumps",
+     "bbox": null
+    },
+    {
+     "text": "over",
+     "bbox": null
+    },
+    {
+     "text": "the",
+     "bbox": null
+    }
+   ]
+  },
+  {
+   "row": 5,
+   "expected": [
+    "lazy",
+    "dog"
+   ],
+   "bbox": [
+    5,
+    673,
+    1385,
+    763
+   ],
+   "split_confidence": 1.0,
+   "units": [
+    {
+     "text": "lazy",
+     "bbox": [
+      5,
+      695,
+      722,
+      756
+     ]
+    },
+    {
+     "text": "dog",
+     "bbox": [
+      1157,
+      707,
+      1385,
+      712
+     ]
+    }
+   ]
+  },
+  {
+   "row": 6,
+   "expected": [
+    "Resistance"
+   ],
+   "bbox": [
+    6,
+    763,
+    376,
+    820
+   ],
+   "split_confidence": 1.0,
+   "units": [
+    {
+     "text": "Resistance",
+     "bbox": [
+      6,
+      763,
+      376,
+      820
+     ]
+    }
+   ]
+  },
+  {
+   "row": 7,
+   "expected": [
+    "resistance"
+   ],
+   "bbox": [
+    6,
+    824,
+    447,
+    911
+   ],
+   "split_confidence": 1.0,
+   "units": [
+    {
+     "text": "resistance",
+     "bbox": [
+      6,
+      824,
+      447,
+      885
+     ]
+    }
+   ]
+  },
+  {
+   "row": 8,
+   "expected": [
+    "RESISTENCE"
+   ],
+   "bbox": [
+    3,
+    911,
+    1392,
+    1020
+   ],
+   "split_confidence": 1.0,
+   "units": [
+    {
+     "text": "RESISTENCE",
+     "bbox": [
+      3,
+      953,
+      463,
+      1015
+     ]
+    }
+   ]
+  },
+  {
+   "row": 9,
+   "expected": [
+    "Experimental"
+   ],
+   "bbox": [
+    0,
+    1020,
+    1393,
+    1094
+   ],
+   "split_confidence": 1.0,
+   "units": [
+    {
+     "text": "Experimental",
+     "bbox": [
+      0,
+      1020,
+      1393,
+      1094
+     ]
+    }
+   ]
+  },
+  {
+   "row": 10,
+   "expected": [
+    "apparatus"
+   ],
+   "bbox": [
+    0,
+    1094,
+    1394,
+    1165
+   ],
+   "split_confidence": 1.0,
+   "units": [
+    {
+     "text": "apparatus",
+     "bbox": [
+      0,
+      1094,
+      1394,
+      1165
+     ]
+    }
+   ]
+  },
+  {
+   "row": 11,
+   "expected": [
+    "galvanometer"
+   ],
+   "bbox": [
+    1,
+    1165,
+    1392,
+    1212
+   ],
+   "split_confidence": 1.0,
+   "units": [
+    {
+     "text": "galvanometer",
+     "bbox": [
+      1,
+      1165,
+      1392,
+      1209
+     ]
+    }
+   ]
+  }
+ ]
+}
