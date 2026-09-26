@@ -105,10 +105,8 @@ let customFontFile = null;
 
 let placementMode = "automatic";
 
-// AI handwriting detection
-let handwritingSampleFile = null;
-let detectedFont = null;
-let detectedFontFileName = null;
+// Personal handwriting profile
+let handwritingStyleId = null;
 
 /* ==========================================
    IMAGE UPLOAD
@@ -140,6 +138,7 @@ function loadImage(file) {
     // Keep the actual File object
     // so we can send it to Django later.
     uploadedImageFile = file;
+    aiGeometry = null;
 
     const reader =
         new FileReader();
@@ -171,241 +170,64 @@ function loadImage(file) {
 }
 
 /* ==========================================
-   AI HANDWRITING FONT DETECTION
-========================================== */
-
-/* ==========================================
-   AI HANDWRITING FONT DETECTION
+   PERSONAL HANDWRITING ANALYSIS
 ========================================== */
 
 async function detectHandwritingFont(file) {
+    if (!file) return;
 
-    if (!file) {
-        return;
-    }
-
-    console.log(
-        "Detecting handwriting font..."
-    );
-
+    handwritingStyleId = null;
     if (handwritingStatus) {
-        handwritingStatus.textContent =
-            "AI is analyzing your handwriting...";
+        handwritingStatus.textContent = "Extracting words from your handwriting sample...";
     }
-
     if (handwritingUploadButton) {
         handwritingUploadButton.disabled = true;
-        handwritingUploadButton.textContent =
-            "Analyzing handwriting...";
+        handwritingUploadButton.textContent = "Analyzing handwriting...";
     }
 
     try {
-
-        // ==========================================
-        // CREATE FORM DATA
-        // ==========================================
-
-        const formData =
-            new FormData();
-
-        formData.append(
-            "image",
-            file
+        const formData = new FormData();
+        formData.append("image", file);
+        const response = await fetch(
+            "http://127.0.0.1:8000/api/analyze-handwriting/",
+            { method: "POST", body: formData }
         );
-
-
-        // ==========================================
-        // SEND TO DJANGO
-        // ==========================================
-
-        const response =
-            await fetch(
-                "http://127.0.0.1:8000/api/detect-font/",
-                {
-                    method: "POST",
-                    body: formData
-                }
-            );
-
-
-        // ==========================================
-        // READ RESPONSE
-        // ==========================================
-
-        const data =
-            await response.json();
-
-        console.log(
-            "Font detection response:",
-            data
-        );
-
-
+        const data = await response.json();
         if (!response.ok || !data.success) {
-
-            throw new Error(
-                data.error ||
-                "Could not detect handwriting."
-            );
+            throw new Error(data.error || "Could not analyze handwriting.");
         }
 
-
-        // ==========================================
-        // SAVE DETECTED FONT
-        // ==========================================
-
-        handwritingSampleFile =
-            file;
-
-        detectedFont =
-            data.font_family;
-
-        detectedFontFileName =
-            data.font_filename;
-
-
-        console.log(
-            "AI detected font:",
-            detectedFont
-        );
-
-        console.log(
-            "AI font confidence:",
-            data.confidence
-        );
-
-
-        // ==========================================
-        // LOAD DOWNLOADED TTF INTO BROWSER
-        // ==========================================
-
-        const fontURL =
-            `http://127.0.0.1:8000/api/detected-font/${encodeURIComponent(
-                detectedFontFileName
-            )}/`;
-
-
-        const detectedFontFace =
-            new FontFace(
-                detectedFont,
-                `url("${fontURL}")`
-            );
-
-
-        await detectedFontFace.load();
-
-
-        document.fonts.add(
-            detectedFontFace
-        );
-
-
-        console.log(
-            "Detected TTF loaded into browser:",
-            detectedFont
-        );
-
-
-        // ==========================================
-        // ADD FONT TO DROPDOWN
-        // ==========================================
-
+        handwritingStyleId = data.style_id;
         if (fontSelect) {
-
-            const existingOption =
-                Array.from(
-                    fontSelect.options
-                ).find(
-                    option =>
-                        option.value ===
-                        detectedFont
-                );
-
-
-            if (!existingOption) {
-
-                const option =
-                    document.createElement(
-                        "option"
-                    );
-
-                option.value =
-                    detectedFont;
-
-                option.textContent =
-                    `${detectedFont} — AI Detected`;
-
-                fontSelect.appendChild(
-                    option
-                );
+            let option = fontSelect.querySelector('option[value="personal"]');
+            if (!option) {
+                option = document.createElement("option");
+                option.value = "personal";
+                option.textContent = "My handwriting";
+                fontSelect.prepend(option);
             }
-
-
-            // Automatically select AI font
-            fontSelect.value =
-                detectedFont;
+            fontSelect.value = "personal";
         }
-
-
-        // ==========================================
-        // UPDATE STATUS
-        // ==========================================
-
         if (handwritingStatus) {
-
-            const confidence =
-                Math.round(
-                    Number(data.confidence || 0) * 100
-                );
-
             handwritingStatus.textContent =
-                `✓ ${detectedFont} detected — ${confidence}% AI match`;
+                `Ready: ${data.reference_count} handwritten word samples. Generate to see your result.`;
         }
-
-
-        // ==========================================
-        // REFRESH LIVE PREVIEW
-        // ==========================================
-
         updatePreview();
-
-
-        console.log(
-            "Detected font applied to preview."
-        );
-
-
     } catch (error) {
-
-        console.error(
-            "Handwriting font detection error:",
-            error
-        );
-
-
+        console.error("Handwriting analysis error:", error);
+        handwritingStyleId = null;
         if (handwritingStatus) {
             handwritingStatus.textContent =
-                "Could not detect handwriting. Try another sample.";
+                "Could not extract enough handwriting. Try a clearer sample.";
         }
-
-        alert(
-            "Handwriting detection failed:\n\n" +
-            error.message
-        );
-
+        alert("Handwriting analysis failed:\n\n" + error.message);
     } finally {
-
         if (handwritingUploadButton) {
-
-            handwritingUploadButton.disabled =
-                false;
-
-            handwritingUploadButton.textContent =
-                "✍ Upload handwriting sample";
+            handwritingUploadButton.disabled = false;
+            handwritingUploadButton.textContent = "✍ Upload handwriting sample";
         }
     }
 }
-
 /* ==========================================
    HANDWRITING SAMPLE UPLOAD
 ========================================== */
@@ -449,8 +271,8 @@ handwritingInput?.addEventListener(
 removeButton?.addEventListener("click", () => {
 
     uploadedImage = null;
-
     uploadedImageFile = null;
+    aiGeometry = null;
 
     imageInput.value = "";
 
@@ -709,6 +531,10 @@ generateButton?.addEventListener(
 
             return;
         }
+        if (fontSelect?.value === "personal" && !handwritingStyleId) {
+            alert("Upload a handwriting sample first.");
+            return;
+        }
 
 
         // ==========================================
@@ -807,20 +633,10 @@ generateButton?.addEventListener(
             fontName
         );
 
-        // If the selected font came from AI detection,
-        // tell Django which downloaded TTF to use.
-        if (
-            detectedFontFileName &&
-            detectedFont === fontName
-        ) {
+        if (fontName === "personal") {
             formData.append(
-                "detected_font_filename",
-                detectedFontFileName
-            );
-
-            console.log(
-                "Using AI detected font file:",
-                detectedFontFileName
+                "style_id",
+                handwritingStyleId
             );
         }
 
@@ -1633,25 +1449,22 @@ const editorStatus =
 
 
 async function loadAILines() {
+    const sourceFile = uploadedImageFile;
     try {
+        if (!sourceFile) return;
+        const formData = new FormData();
+        formData.append("image", sourceFile);
         const response = await fetch(
-            "http://127.0.0.1:8000/api/ai-lines/?t=" +
-            Date.now()
+            "http://127.0.0.1:8000/api/analyze-notebook/",
+            { method: "POST", body: formData }
         );
-
-        if (!response.ok) {
-            throw new Error(
-                "AI line geometry is not available."
-            );
-        }
-
         const data = await response.json();
-
-        if (!data.success) {
+        if (!response.ok || !data.success) {
             throw new Error(
-                data.error || "Failed to load AI lines."
+                data.error || "Failed to detect notebook lines."
             );
         }
+        if (sourceFile !== uploadedImageFile) return;
 
         aiGeometry = data.geometry;
 
@@ -1663,10 +1476,15 @@ async function loadAILines() {
         drawAILines();
 
     } catch (error) {
+        if (sourceFile !== uploadedImageFile) return;
+        aiGeometry = null;
         console.error(
             "AI line loading error:",
             error
         );
+        if (editorStatus) {
+            editorStatus.textContent = error.message;
+        }
     }
 }
 
@@ -2414,6 +2232,9 @@ function drawTextOnSelectedLine() {
     if (!text) {
         return;
     }
+    if (fontSelect?.value === "personal") {
+        return;
+    }
 
     const imageBounds =
         getImageDisplayBounds();
@@ -2802,4 +2623,4 @@ function drawTextAlongLine(
         currentDistance +=
             charWidth;
     }
-}   
+}

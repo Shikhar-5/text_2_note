@@ -1,6 +1,6 @@
 import sys
 from pathlib import Path
-from PIL import Image,ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont, ImageOps
 from django.http import JsonResponse, FileResponse
 from django.views.decorators.csrf import csrf_exempt
 from openai import OpenAI
@@ -9,6 +9,9 @@ import base64
 import json
 import io
 import urllib.request
+import re
+import uuid
+from functools import lru_cache
 from urllib.request import Request, urlopen
 
 
@@ -18,9 +21,9 @@ from urllib.request import Request, urlopen
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 
-client = OpenAI(
-    api_key=settings.OPENAI_API_KEY
-)
+@lru_cache(maxsize=1)
+def get_openai_client():
+    return OpenAI(api_key=settings.OPENAI_API_KEY)
 
 sys.path.insert(
     0,
@@ -33,6 +36,11 @@ sys.path.insert(
 # =========================================================
 
 from Text2Note.rendering.render_engine import render_notebook
+from Text2Note.handwriting_engine.style_crops import load_word_crops
+from Text2Note.handwriting_engine.synthesis import HandwritingModelError, generate_word_masks
+from Text2Note.handwriting_engine.render_personal import render_personal_notebook
+from Text2Note.handwriting_engine.notebook_geometry import detect_notebook_geometry
+import cv2
 
 
 # =========================================================
@@ -321,7 +329,7 @@ FONT CANDIDATES:
 {candidate_text}
 """
 
-        shortlist_response = client.chat.completions.create(
+        shortlist_response = get_openai_client().chat.completions.create(
 
             model="gpt-5.6-luna",
 
@@ -723,7 +731,7 @@ Score should be between 0 and 100.
 Do not invent font IDs.
 """
 
-        comparison_response = client.chat.completions.create(
+        comparison_response = get_openai_client().chat.completions.create(
 
             model="gpt-5.6-luna",
 
@@ -1098,6 +1106,11 @@ def render_note(request):
                 },
                 status=400
             )
+        image_extension = Path(uploaded_image.name).suffix.lower()
+        if image_extension not in {".jpg", ".jpeg", ".png", ".webp"}:
+            return JsonResponse({"success": False, "error": "Notebook photo must be JPG, PNG, or WEBP."}, status=400)
+        if uploaded_image.size > 12 * 1024 * 1024:
+            return JsonResponse({"success": False, "error": "Notebook photo must be under 12 MB."}, status=400)
 
 
         # =================================================
@@ -1202,10 +1215,7 @@ def render_note(request):
         # SAVE UPLOADED IMAGE
         # =================================================
 
-        image_path = (
-            uploads_dir
-            / uploaded_image.name
-        )
+        image_path = uploads_dir / f"{uuid.uuid4().hex}{image_extension}"
 
         with open(
             image_path,
@@ -1244,6 +1254,51 @@ def render_note(request):
             outputs_dir
             / "rendered_note.jpg"
         )
+
+        style_id = request.POST.get("style_id", "").strip()
+        if style_id:
+            if not re.fullmatch(r"[0-9a-f]{32}", style_id):
+                return JsonResponse({"success": False, "error": "Invalid handwriting style ID."}, status=400)
+            profile_dir = text2note_dir / "handwriting_profiles" / style_id
+            if not (profile_dir / "words" / "metadata.json").is_file():
+                return JsonResponse({"success": False, "error": "Handwriting style was not found. Upload the sample again."}, status=404)
+            try:
+                with Image.open(image_path) as opened:
+                    oriented = ImageOps.exif_transpose(opened)
+                    oriented.save(image_path)
+                supplied_geometry = request.POST.get("ai_geometry", "").strip()
+                if supplied_geometry:
+                    line_geometry = json.loads(supplied_geometry)
+                else:
+                    notebook_pixels = cv2.imread(str(image_path), cv2.IMREAD_COLOR)
+                    if notebook_pixels is None:
+                        raise ValueError("Cannot read the uploaded notebook photo.")
+                    line_geometry = detect_notebook_geometry(notebook_pixels)
+                style_crops = load_word_crops(profile_dir / "words")
+                words = re.findall(r"[^\s]+", text)
+                word_masks = generate_word_masks(style_crops, words)
+                render_personal_notebook(
+                    image_path=image_path,
+                    text=text,
+                    word_masks=word_masks,
+                    font_size=font_size,
+                    ink_color=rgba_color,
+                    line_data_path=line_data_path,
+                    output_path=output_path,
+                    line_geometry=line_geometry,
+                )
+            except (HandwritingModelError, ValueError, json.JSONDecodeError) as error:
+                return JsonResponse({"success": False, "error": str(error)}, status=422)
+
+            pdf_path = outputs_dir / "rendered_note.pdf"
+            Image.open(output_path).convert("RGB").save(pdf_path, "PDF", resolution=100.0)
+            return JsonResponse({
+                "status": "success",
+                "success": True,
+                "message": "Note rendered in your handwriting.",
+                "output": str(output_path),
+                "style_id": style_id,
+            })
 
 
         font_name = request.POST.get("font", "Caveat")

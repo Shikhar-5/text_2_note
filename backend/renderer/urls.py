@@ -1,4 +1,5 @@
 from django.urls import path
+from .handwriting_views import analyze_handwriting, analyze_notebook
 
 from .views import (
     health_check,
@@ -16,6 +17,8 @@ from .views import (
 urlpatterns = [
 
     path("health/", health_check),
+    path("analyze-handwriting/", analyze_handwriting, name="analyze_handwriting"),
+    path("analyze-notebook/", analyze_notebook, name="analyze_notebook"),
 
     path("render/", render_note),
 
